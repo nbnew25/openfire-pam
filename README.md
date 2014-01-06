@@ -16,9 +16,7 @@ BUILD libshaj.so
 + cp -rf ~/shaj-master/src/c/libshaj.so /opt/openfire/lib/
 + cp -rf ~/shaj-master/src/c/libshaj.so /usr/lib/
 + sudo nano /etc/pam.d/openfire
- ---/etc/pam.d/openfire----------
-  auth    required        pam_unix.so nullok_secure
- --------------------------------
+  - auth    required        pam_unix.so nullok_secure
 
 ============
 CONFIG Openfire use NativeAuthProvider
