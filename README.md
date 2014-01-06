@@ -6,6 +6,7 @@ BUILD shaj-0.5.jar
 + cd ~/shaj-master
 + ant dist
 + cp -rf shaj-master/build/shaj-0.5.jar /opt/openfire/lib/ 
+
 ============
 BUILD libshaj.so
 + cd ~/shaj-master/src/c/
@@ -18,6 +19,7 @@ BUILD libshaj.so
  ---/etc/pam.d/openfire----------
   auth    required        pam_unix.so nullok_secure
  --------------------------------
+
 ============
 CONFIG Openfire use NativeAuthProvider
 Open Server->Server Manager->System Properties
@@ -26,4 +28,5 @@ Open Server->Server Manager->System Properties
 + provider.user.className=org.jivesoftware.openfire.user.NativeUserProvider
 + admin.authorizedJIDs=admin@mycompany
 + xmpp.domain=mycompany
+
 =============
